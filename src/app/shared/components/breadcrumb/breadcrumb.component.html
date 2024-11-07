@@ -1,0 +1,19 @@
+<!--<nav class="layout-breadcrumb">
+  <ol>
+    <ng-template ngFor let-item let-last="last" [ngForOf]="breadcrumbs$ | async">
+      <li>{{item.label}}</li>
+      @if (!last){
+        <li class="layout-breadcrumb-chevron"> / </li>
+      }
+    </ng-template>
+  </ol>
+  hola
+</nav>-->
+
+
+<ngx-simple-breadcrumb>
+  <ng-template let-breadcrumb>
+    <a [routerLink]="breadcrumb.route">{{breadcrumb.label}}</a>
+  </ng-template>
+  <ng-template #separator> > </ng-template>
+</ngx-simple-breadcrumb>

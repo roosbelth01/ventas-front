@@ -1,0 +1,21 @@
+<ul class="layout-menu">
+
+  <!--@for (item of model; track item.id){}-->
+  <!--<ng-container *ngFor="let item of model; let i = index;">
+    @if(!item.separator){
+      <app-menuitem [item]="item" [index]="i" [root]="true"></app-menuitem>
+    }
+    @if (item.separator){
+      <li class="menu-separator"></li>
+    }
+  </ng-container>-->
+
+  @for (item of model; track item.id){
+    @if(!item.separator){
+      <app-menuitem [item]="item" [root]="true"></app-menuitem>
+    }
+    @if (item.separator){
+      <li class="menu-separator"></li>
+    }
+  }
+</ul>
