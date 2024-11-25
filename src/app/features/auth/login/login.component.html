@@ -50,11 +50,12 @@
                         class="text-600 cursor-pointer hover:text-primary cursor-pointer ml-auto transition-colors transition-duration-300">Reset
                         password</a>
                 </div> -->
-                <button pButton pRipple label="Log In" [disabled]="loginForm.invalid" class="w-full" [routerLink]="['/']"></button>
-
-            </div>
+                <button pButton pRipple label="Log In" [disabled]="loginForm.invalid" class="w-full" (click)="login()"></button>
+<!--                 <button pButton pRipple label="Log In" [disabled]="loginForm.invalid" class="w-full" [routerLink]="['/']"></button>
+ -->            </div>
         </form>
     </div>
 </div>
+<p-toast />
 
 <!-- <app-config [minimal]="true"></app-config> -->

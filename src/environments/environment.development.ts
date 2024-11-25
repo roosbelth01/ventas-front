@@ -1,1 +1,3 @@
-export const environment = {};
+export const environment = {
+    urlBackend: 'http://localhost:8080/api/'
+};
